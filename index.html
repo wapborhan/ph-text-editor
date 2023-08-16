@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Text Editor</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/style.css">
-  <title>Word Counter</title>
-</head>
+  <body>
+    <div class="container">
+      <div class="header mt-5 text-center mb-4"><h3>Text Editor</h3></div>
+      <div class="card w-100">
+        <div class="card-header">
+          <div class="d-flex justify-content-around">
+            <div class="d-flex">
+              <div class="fontname">
+                <select name="" id="">
+                  <option value="">Font Name</option>
+                  <option value="">Font Name</option>
+                  <option value="">Font Name</option>
+                </select>
+              </div>
+              <div class="font-size">
+                <input type="number" value="15" id="" />
+                <span>A+</span>
+                <span>A-</span>
+              </div>
+            </div>
 
-<body>
-  <div class="container">
-    <h3>Word Counter</h3>
-    <textarea placeholder="Enter your text here..."></textarea>
-    <div class="output row">
-      <div>Characters: <span id="characterCount">0</span></div>
-      <div>Words: <span id="wordCount">0</span></div>
-      <div>Sentences: <span id="sentenceCount">0</span></div>
-      <div>Paragraphs: <span id="paragraphCount">0</span></div>
+            <div class="d-flex">
+              <div class="font-weight">
+                <i class="fa-solid fa-bold"></i>
+                <i class="fa-solid fa-italic"></i>
+                <i class="fa-solid fa-underline"></i>
+                <i class="fa-solid fa-underline"></i>
+                <i class="fa-solid fa-strikethrough"></i>
+              </div>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-align-left"></i>
+              <i class="fa-solid fa-align-center"></i>
+              <i class="fa-solid fa-align-right"></i>
+              <i class="fa-solid fa-align-justify"></i>
+            </div>
+            <div class="d-flex">
+              <div class="d-flex">
+                <i class="fa-solid fa-font"></i>
+                <input type="color" name="" id="color" />
+              </div>
+              <div class="d-flex">
+                <i class="fa-solid fa-fill-drip"></i>
+                <input type="color" name="" id="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <textarea placeholder="Enter your text here..."></textarea>
+        </div>
+        <div class="card-footer">
+          <div class="output d-flex justify-content-around">
+            <div>Characters: <span id="characterCount"> 0 </span></div>
+            <div>Words: <span id="wordCount"> 0 </span></div>
+            <div>Sentences: <span id="sentenceCount"> 0 </span></div>
+            <div>Paragraphs: <span id="paragraphCount"> 0 </span></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <script src="src/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4e3bd9b7a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script.js"></script>
+  </body>
 </html>
