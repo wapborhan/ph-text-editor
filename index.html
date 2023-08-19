@@ -20,10 +20,12 @@
           <div class="d-flex justify-content-around">
             <div class="d-flex">
               <div class="fontname">
-                <select name="" id="">
+                <select name="" id="font-name">
                   <option value="">Font Name</option>
-                  <option value="">Font Name</option>
-                  <option value="">Font Name</option>
+                  <option value="open-sans">Open Sans</option>
+                  <option value="raleway">Raleway</option>
+                  <option value="roboto">Roboto</option>
+                  <option value="tilt-prism">Tilt Prism</option>
                 </select>
               </div>
               <div class="font-size ms-2">
@@ -42,44 +44,79 @@
                 </button>
               </div>
             </div>
-
+            <!-- font decoration -->
             <div class="d-flex">
               <div class="font-weight">
-                <button class="bg-secondary p-1 rounded text-white ms-2">
+                <button
+                  id="font-normal"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
+                  N
+                </button>
+                <button
+                  id="font-bold"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
                   <i class="fa-solid fa-bold"></i>
                 </button>
-                <button class="bg-secondary p-1 rounded text-white ms-2">
+                <button
+                  id="font-italic"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
                   <i class="fa-solid fa-italic"></i>
                 </button>
-                <button class="bg-secondary p-1 rounded text-white ms-2">
+                <button
+                  id="font-underline"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
                   <i class="fa-solid fa-underline"></i>
                 </button>
-                <button class="bg-secondary p-1 rounded text-white ms-2">
+                <button
+                  id="font-overline"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
                   <i class="fa-solid fa-underline"></i>
                 </button>
-                <button class="bg-secondary p-1 rounded text-white ms-2">
+                <button
+                  id="font-line-through"
+                  class="bg-secondary p-1 rounded text-white ms-2"
+                >
                   <i class="fa-solid fa-strikethrough"></i>
                 </button>
               </div>
             </div>
+            <!-- align -->
             <div class="d-flex">
-              <button class="bg-secondary p-1 rounded text-white ms-2">
+              <button
+                id="text-left"
+                class="bg-secondary p-1 rounded text-white ms-2"
+              >
                 <i class="fa-solid fa-align-left"></i>
               </button>
-              <button class="bg-secondary p-1 rounded text-white ms-2">
+              <button
+                id="text-center"
+                class="bg-secondary p-1 rounded text-white ms-2"
+              >
                 <i class="fa-solid fa-align-center"></i>
               </button>
-              <button class="bg-secondary p-1 rounded text-white ms-2">
+              <button
+                id="text-right"
+                class="bg-secondary p-1 rounded text-white ms-2"
+              >
                 <i class="fa-solid fa-align-right"></i>
               </button>
-              <button class="bg-secondary p-1 rounded text-white ms-2">
+              <button
+                id="text-justify"
+                class="bg-secondary p-1 rounded text-white ms-2"
+              >
                 <i class="fa-solid fa-align-justify"></i>
               </button>
             </div>
+            <!-- color -->
             <div class="d-flex">
               <div class="d-flex">
                 <i class="fa-solid fa-font"></i>
-                <input type="color" name="" id="color" />
+                <input id="text-color" type="color" name="" id="color" />
               </div>
               <div class="d-flex">
                 <i class="fa-solid fa-fill-drip"></i>

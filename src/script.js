@@ -29,7 +29,7 @@ input.addEventListener("keyup", function () {
   // sentence count	using ./!/? as sentense separators
   if (words) {
     var sentences = input.value.split(/[.|!|?]+/g);
-    console.log(sentences);
+    // console.log(sentences);
     sentenceCount.innerHTML = sentences.length - 1;
   } else {
     sentenceCount.innerHTML = 0;
@@ -45,9 +45,14 @@ input.addEventListener("keyup", function () {
     paragraphCount.innerHTML = 0;
   }
 });
-// Font Size Changes
-let fontSize = document.getElementById("fontsize");
+// font name
+const inputFont = document.getElementById("font-name").value;
 
+console.log(inputFont);
+
+// Font Size Changes
+// Input Value Pick
+let fontSize = document.getElementById("fontsize");
 const fontsizeValue = function (e) {
   inputValue.style = "font-size:" + `${e.target.value}px`;
 };
@@ -67,3 +72,48 @@ document.getElementById("sizedecriment").addEventListener("click", function () {
   fontSize.value = fontNumber - 1;
   inputValue.style = "font-size:" + `${fontNumber - 1}px`;
 });
+
+// text decoration
+document.getElementById("font-normal").addEventListener("click", function () {
+  inputValue.style = "font-weight:" + "400";
+});
+document.getElementById("font-bold").addEventListener("click", function () {
+  inputValue.style = "font-weight:" + "bold";
+});
+document.getElementById("font-italic").addEventListener("click", function () {
+  inputValue.style = "font-style:" + "italic";
+});
+document
+  .getElementById("font-underline")
+  .addEventListener("click", function () {
+    inputValue.style = "text-decoration:" + "underline";
+  });
+document.getElementById("font-overline").addEventListener("click", function () {
+  inputValue.style = "text-decoration:" + "overline";
+});
+document
+  .getElementById("font-line-through")
+  .addEventListener("click", function () {
+    inputValue.style = "text-decoration:" + "line-through";
+  });
+// text alignment
+document.getElementById("text-left").addEventListener("click", function () {
+  inputValue.style = "text-align:" + "left";
+});
+document.getElementById("text-center").addEventListener("click", function () {
+  inputValue.style = "text-align:" + "center";
+});
+document.getElementById("text-right").addEventListener("click", function () {
+  inputValue.style = "text-align:" + "right";
+});
+document.getElementById("text-justify").addEventListener("click", function () {
+  inputValue.style = "text-align:" + "justify";
+});
+// Text Color
+
+let inputColor = document.getElementById("text-color");
+const colorValue = function (e) {
+  inputValue.style = "color:" + `${e.target.value}`;
+};
+fontSize.addEventListener("input", colorValue);
+fontSize.addEventListener("propertchange", colorValue);
